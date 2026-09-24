@@ -1,0 +1,87 @@
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: aparecer 1.5s ease;
+}
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 5px #00eaff;
+  }
+  50% {
+    text-shadow: 0 0 15px #00eaff;
+  }
+  100% {
+    text-shadow: 0 0 5px #00eaff;
+  }
+}
+
+h1,
+h2,
+h3 {
+  animation: neon 2s infinite;
+}
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+header h1 img {
+  animation: logo 5s infinite;
+  filter: drop-shadow(0 0 10px #00eaff);
+}
+.trailer-btn {
+  background-color: red;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 12px 25px;
+
+  border-radius: 10px;
+
+  font-size: 22px;
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  transition: 0.3s;
+}
+.trailer-btn:hover {
+  background-color: darkred;
+
+  transform: scale(1.05);
+
+  box-shadow: 0 0 15px red;
+}
+img {
+  transition: 0.3s;
+}
+
+@media (hover: hover) {
+  img:hover {
+    transform: scale(1.05);
+  }
+
+  .trailer-btn:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px red;
+  }
+}
