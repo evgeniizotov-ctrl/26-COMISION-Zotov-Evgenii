@@ -113,7 +113,7 @@ $enviadoCorrectamente = $enviado && empty($errores);
           <p><?= htmlspecialchars($error, ENT_QUOTES, "UTF-8") ?></p>
         <?php endforeach; ?>
 
-        <a class="btn-home" href="pagina6contacto.php"> Volver al formulario </a>
+        <a class="btn-home" href="contacto.php"> Volver al formulario </a>
       <?php endif; ?>
 
       <a class="btn-home" href="../index.php"> Volver al inicio </a>
